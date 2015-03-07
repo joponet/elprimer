@@ -3,11 +3,8 @@ package prova;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Label;
-import java.awt.Panel;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-
-import javax.swing.JFrame;
 
 public class Main {
 	
@@ -15,14 +12,12 @@ public class Main {
 	public void start(){
 		System.out.print("Hola");
 		Frame window = new Frame("El Primer");
+		window.setLocation(400, 100);
 		Label label = new Label("Hola tio!");
-		label.setLocation(10, 10);
-		Panel panel = new Panel();
+		window.setSize(200, 80);
 		window.add(label);
 		window.setVisible(true);
-		window.add(panel);
 		window.setResizable(false);
-		panel.add(label);
 		window.addWindowListener(new WindowListener() {
 			
 			public void windowClosed(WindowEvent arg0) {
@@ -49,9 +44,9 @@ public class Main {
 			public void windowOpened(WindowEvent arg0) {
 			}
 		});
-		window.pack();
-		g = panel.getGraphics();
-		draw(g);
+//		window.pack();
+//		g = panel.getGraphics();
+//		draw(g);
 	}
 	public void draw(Graphics g){
 		g.fillRect(10,10,100,100);
