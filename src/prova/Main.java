@@ -13,7 +13,7 @@ public class Main {
 	
 	public Graphics g;
 	public void start(){
-		System.out.print("hola");
+		System.out.print("Hola");
 		Frame window = new Frame("El Primer");
 		Label label = new Label("Hola tio!");
 		label.setLocation(10, 10);
