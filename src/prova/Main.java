@@ -10,8 +10,8 @@ public class Main {
 	
 	public Graphics g;
 	public void start(){
-		System.out.print("Hola ara");
-		System.out.print("Hola Edu");
+		System.out.println("Hola ara");
+		System.out.println("Hola Edu");
 		Frame window = new Frame("El Primer");
 		window.setLocation(400, 100);
 		Label label = new Label("Hola tio!");
