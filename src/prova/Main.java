@@ -14,6 +14,7 @@ public class Main {
 		Frame window = new Frame("El Primer");
 		window.setLocation(400, 100);
 		Label label = new Label("Hola tio!");
+		label.setAlignment(Label.CENTER);
 		window.setSize(200, 80);
 		window.add(label);
 		window.setVisible(true);
