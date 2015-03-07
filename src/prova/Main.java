@@ -1,7 +1,7 @@
 package prova;
 
 public class Main {
-	int prova = 0;
+	int prova2 = 0;
 	public void start(){
 		
 	}
