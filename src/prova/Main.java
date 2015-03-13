@@ -1,5 +1,7 @@
 package prova;
 
+import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Label;
@@ -19,13 +21,14 @@ public class Main {
 		Frame window = new Frame("El Primer");
 		window.setLocation(400, 100);
 		Panel panel = new Panel();
+		panel.setBackground(Color.GREEN);
 		Label label = new Label("Hola tio!");
 		label.setAlignment(Label.CENTER);
-		window.setSize(200, 80);
-		window.add(panel);
-		window.add(label);
+		window.add(label, BorderLayout.NORTH);
+		window.add(panel, BorderLayout.CENTER);
 		window.setVisible(true);
-		window.setResizable(false);
+		window.pack();
+		window.setSize(400, 200);
 		window.addWindowListener(new WindowListener() {
 			
 			public void windowClosed(WindowEvent arg0) {
@@ -52,7 +55,6 @@ public class Main {
 			public void windowOpened(WindowEvent arg0) {
 			}
 		});
-		window.pack();
 		g = panel.getGraphics();
 		draw(g);
 	}
